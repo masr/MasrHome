@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Masr Home
+    </title>
+    <script type="text/javascript" src="index/js/jquery-1.7.2.js"></script>
+    <link rel="stylesheet" href="index/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="index/css/redmond/jquery-ui-1.10.3.custom.min.css"/>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        #container {
+            width: 50%;
+            margin: 10px auto;
+            padding: 10px;;
+        }
+
+        h1 {
+            font-size: 650%;
+            margin: 0 0 0 0;
+            width: 100%;
+            height: 170px;
+            line-height: 170px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            font-family: fantasy;
+        }
+
+        h2 {
+            font-size: 300%;
+            margin-bottom: 0.3em;
+        }
+
+        ul li {
+            list-style: none;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 2em;
+        }
+
+        ul li a.title {
+            font-size: 200%;
+            margin: 1em;
+            display: inline-block;
+            color: #003bb3;
+        }
+
+        ul li a img {
+            -moz-box-shadow: 0 0 2px #000;
+            -webkit-box-shadow: 0 0 2px #000;
+            box-shadow: 0 0 2px #000;
+            position: relative;
+        }
+
+        #popup {
+            position: absolute;
+            max-width: 20em;
+            filter: alpha(opacity = 92);
+            -moz-opacity: 0.92;
+            opacity: 0.92;
+            background-color: #006dcc;
+            padding: 1em;
+            color: #fff;
+            font-size: 120%;
+            font-family: fantasy;
+            line-height: 150%;
+            -moz-box-shadow: 6px 6px 6px #444;
+            -webkit-box-shadow: 6px 6px 6px #444;
+            box-shadow: 6px 6px 6px #444;
+            display: none;
+        }
+
+        p.intro {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Masr Home . . . </h1>
+
+<div id="container">
+
+    <h2>Blogs : </h2>
+    <ul class="row-fluid">
+        <li class="span4">
+            <a class="portal" href="http://blog.masr.in"><img src="index/img/blog.png"/></a>
+            <a class="title" href="http://blog.masr.in">My Blog</a>
+
+            <p class="intro">This is my newest and current blog. It is written by jekyll and hosted by github. It's more
+                like a GEEK way other than a general blog. I love
+                this way. Simple, Easy and Elegant.</p>
+        </li>
+        <li class="span6">
+            <a class="portal" href="http://masr.in/blog/"><img width="325" src="index/img/old_blog.png"/></a>
+            <a class="title" href="http://masr.in/blog/">Old Blog</a>
+
+            <p class="intro">This is my old blog. It is based ob wordpress and the theme is designed by myself. I built
+                this site start from scratch in 2011 and have written many posts about technology and music(there are
+                plenty of music records sang by me). Gradually, I feel like that wordpress is not suitable for a geek
+                man. It is too ordinary and stupid. It's time to say goodbye.</p>
+        </li>
+    </ul>
+
+    <h2>Works</h2>
+    <ul>
+        <li><a class="portal" href="http://supermodel.masr.in"><img width="500" src="index/img/supermodel.png"/></a>
+            <a class="title" href="http://supermodel.masr.in">1st Super Model Vote Site</a>
+
+            <p class="intro">This is a online vote website for a popular activity called super model in NJU. Before the
+                final match, people
+                can vote for those who looks the best. The candidates were all beautiful and handsome guys. The website
+                was very popular and hot at that time. Over 3000 thousand people visited the website one night. </p>
+        </li>
+        <li>
+            <a class="portal" href="http://ssxf.masr.in"><img width="500" src="index/img/ssxf.png"/></a>
+            <a class="title" href="http://ssxf.masr.in">2nd Super Model Vote Site</a>
+
+            <p class="intro">This is another similar vote website. In the second year, we built this website again for
+                super model. The site was hot again. We also built a weibo wall on the spot. The audience can send a
+                message to a phone number and the text will displayed in the screen wall. </p>
+        </li>
+
+        <li>
+            <a class="portal" href="http://shnsh.net"><img width="500" src="index/img/shnsh.png"/></a>
+            <a class="title" href="http://shnsh.net">JiangSu Sihong Bank Website</a>
+
+            <p class="intro">This is a outsourcing project. We develop the website for a bank. We build the system based
+                on Xoops(a CMS PHP framework). We made 4000 yuan from it. It is the only made-money thing I do in
+                university. I'm proud of it.</p>
+        </li>
+        <li>
+            <a class="portal" href="http://tdflow.masr.in"><img width="500" src="index/img/tdflow.png"/></a>
+            <a class="title" href="http://tdflow.masr.in">Teradata Data Flow</a>
+
+            <p class="intro">This is a general tool for Teradata written by JAVA and PHP. It will analyze the query log
+                of Teradata and build a data flow graph system. It will show the dependency of table and each step's
+                sql, CPU consumption, start time, end time and so on. We write a data flow layout algorithm our own and
+                visualize the data flow with cytoscape web. </p>
+        </li>
+    </ul>
+
+    <h3>Crafts</h3>
+    <ul>
+        <li><a href="http://masr.in/transfer-liquid/">Transfter liquid language in liquid</a></li>
+        <li><a href="http://masr.in/skl-vs-jbb/">Baby Jie vs Shit boy</a></li>
+        <li><a href="http://masr.in:4321">ML web server</a></li>
+        <li><a href="http://masr.in/positive-negative">Positive or Negative</a></li>
+        <li><a href="http://masr.in/positive-negative">Teradata Checksum Tool</a></li>
+    </ul>
+
+</div>
+<div id="popup"></div>
+<script type="text/javascript">
+
+    $(function () {
+        var current = '';
+        $("ul li  a img").mouseover(function () {
+            if (current == $(this).attr('src'))
+                return false;
+
+            current = $(this).attr('src');
+            shake($(this));
+
+
+        }).mouseleave(function () {
+                    current = '';
+                    $("#popup").hide();
+                }
+        ).mousemove(function (evt) {
+                    var x = evt.pageX;
+                    var y = evt.pageY;
+                    var txt = $(this).parent().siblings("p").html();
+                    $("#popup").css({"left":x + 13 + "px", "top":y + 13 + "px"}).html(txt).show();
+                });
+
+        $("ul li  a.title").mouseover(function (evt) {
+            $(this).mousemove(function (evt) {
+                var x = evt.pageX;
+                var y = evt.pageY;
+                var txt = $(this).siblings("p").html();
+                $("#popup").css({"left":x + 13 + "px", "top":y + 13 + "px"}).html(txt).show();
+            }).mouseleave(function (evt) {
+                        current = '';
+                        $("#popup").hide();
+                    }).siblings("a.portal").find("img").each(function () {
+                        shake($(this));
+                    });
+        });
+
+        function shake($dom) {
+            $dom.animate({
+                left:'+=5'
+            }, 80).animate({
+                        left:'-=5'
+                    }, 80).animate({
+                        left:'+=5'
+                    }, 80).animate({
+                        left:'-=5'
+                    }, 80);
+        }
+
+
+    });
+</script>
+
+</body>
+</html>
