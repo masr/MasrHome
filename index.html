@@ -6,7 +6,6 @@
     </title>
     <script type="text/javascript" src="index/js/jquery-1.7.2.js"></script>
     <link rel="stylesheet" href="index/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="index/css/redmond/jquery-ui-1.10.3.custom.min.css"/>
     <style>
         body {
             background-color: #ffffff;
@@ -14,7 +13,7 @@
         }
 
         #container {
-            width: 50%;
+            width: 70%;
             margin: 10px auto;
             padding: 10px;;
         }
@@ -39,15 +38,21 @@
         ul li {
             list-style: none;
             text-align: center;
-            border-bottom: 1px solid #ddd;
             margin-bottom: 2em;
+            float: left;
         }
 
         ul li a.title {
             font-size: 200%;
             margin: 1em;
             display: inline-block;
-            color: #003bb3;
+            color: #000;
+            font-weight: bold;
+        }
+
+        ul li a.portal {
+            display: block;
+            padding-bottom: 1em;
         }
 
         ul li a img {
@@ -88,19 +93,22 @@
 
     <h2>Blogs : </h2>
     <ul class="row-fluid">
-        <li class="span4">
-            <a class="portal" href="http://blog.masr.in"><img src="index/img/blog.png"/></a>
-            <a class="title" href="http://blog.masr.in">My Blog</a>
+        <li class="span6">
+            <a class="portal" target="_blank" href="http://blog.masr.in">
+                <img src="index/img/blog.png"/></a>
 
-            <p class="intro">This is my newest and current blog. It is written by jekyll and hosted by github. It's more
+            <p class="intro" title="My Blog">This is my newest and current blog. It is written by jekyll and hosted by
+                github. It's more
                 like a GEEK way other than a general blog. I love
                 this way. Simple, Easy and Elegant.</p>
         </li>
         <li class="span6">
-            <a class="portal" href="http://masr.in/blog/"><img width="325" src="index/img/old_blog.png"/></a>
-            <a class="title" href="http://masr.in/blog/">Old Blog</a>
+            <a class="portal" target="_blank" href="http://masr.in/blog/">
+                <img style="height:266px"
+                     src="index/img/old_blog.png"/></a>
 
-            <p class="intro">This is my old blog. It is based ob wordpress and the theme is designed by myself. I built
+            <p class="intro" title="Old Blog">This is my old blog. It is based ob wordpress and the theme is designed by
+                myself. I built
                 this site start from scratch in 2011 and have written many posts about technology and music(there are
                 plenty of music records sang by me). Gradually, I feel like that wordpress is not suitable for a geek
                 man. It is too ordinary and stupid. It's time to say goodbye.</p>
@@ -108,47 +116,58 @@
     </ul>
 
     <h2>Works</h2>
-    <ul>
-        <li><a class="portal" href="http://supermodel.masr.in"><img width="500" src="index/img/supermodel.png"/></a>
-            <a class="title" href="http://supermodel.masr.in">1st Super Model Vote Site</a>
+    <ul class="row-fluid">
+        <li class="span4">
+            <a class="portal" target="_blank" href="http://supermodel.masr.in">
+                <img style="height:266px"
+                     src="index/img/supermodel.png"/></a>
 
-            <p class="intro">This is a online vote website for a popular activity called super model in NJU. Before the
+            <p class="intro" title="Super Model Vote Site">This is a online vote website for a popular activity called
+                super model in NJU. Before the
                 final match, people
                 can vote for those who looks the best. The candidates were all beautiful and handsome guys. The website
                 was very popular and hot at that time. Over 3000 thousand people visited the website one night. </p>
         </li>
-        <li>
-            <a class="portal" href="http://ssxf.masr.in"><img width="500" src="index/img/ssxf.png"/></a>
-            <a class="title" href="http://ssxf.masr.in">2nd Super Model Vote Site</a>
+        <li class="span4">
+            <a class="portal" target="_blank" href="http://ssxf.masr.in">
+                <img style="height:266px"
+                     src="index/img/ssxf.png"/></a>
 
-            <p class="intro">This is another similar vote website. In the second year, we built this website again for
+            <p class="intro" title="Super Model Vote Site v2">This is another similar vote website. In the second year,
+                we built this website again for
                 super model. The site was hot again. We also built a weibo wall on the spot. The audience can send a
                 message to a phone number and the text will displayed in the screen wall. </p>
         </li>
 
-        <li>
-            <a class="portal" href="http://shnsh.net"><img width="500" src="index/img/shnsh.png"/></a>
-            <a class="title" href="http://shnsh.net">JiangSu Sihong Bank Website</a>
+        <li class="span4">
+            <a class="portal" target="_blank" href="http://shnsh.net">
+                <img style="height:266px"
+                     src="index/img/shnsh.png"/></a>
 
-            <p class="intro">This is a outsourcing project. We develop the website for a bank. We build the system based
+            <p class="intro" title="JiangSu Sihong Bank Website">This is a outsourcing project. We develop the website
+                for a bank. We build the system based
                 on Xoops(a CMS PHP framework). We made 4000 yuan from it. It is the only made-money thing I do in
                 university. I'm proud of it.</p>
         </li>
-        <li>
-            <a class="portal" href="http://tdflow.masr.in"><img width="500" src="index/img/tdflow.png"/></a>
-            <a class="title" href="http://tdflow.masr.in">Teradata Data Flow</a>
+        <li class="span5">
+            <a class="portal" target="_blank" href="http://tdflow.masr.in">
+                <img style="height:266px"
+                     src="index/img/tdflow.png"/></a>
 
-            <p class="intro">This is a general tool for Teradata written by JAVA and PHP. It will analyze the query log
+            <p class="intro" title="Teradata Data Flow">This is a general tool for Teradata written by JAVA and PHP. It
+                will analyze the query log
                 of Teradata and build a data flow graph system. It will show the dependency of table and each step's
                 sql, CPU consumption, start time, end time and so on. We write a data flow layout algorithm our own and
                 visualize the data flow with cytoscape web. </p>
         </li>
 
-        <li>
-            <a class="portal" href="http://beijiao.us"><img width="500" src="index/img/beijiao.png"/></a>
-            <a class="title" href="http://beijiao.us">Beijiao Youth</a>
+        <li class="span5">
+            <a class="portal" target="_blank" href="http://beijiao.us">
+                <img style="height:266px"
+                     src="index/img/beijiao.png"/></a>
 
-            <p class="intro">This website is written to memorize our youth in high school. There's lots of cute people I
+            <p class="intro" title="Beijiao Youth">This website is written to memorize our youth in high school. There's
+                lots of cute people I
                 loved and loving. The nice stories and happy time are like the colorful rainbow in the clean blue sky. I
                 write many essays and collect many mate's articles to rich the content and our treasured memory.
                 Celebrate for our youth...... </p>
@@ -156,12 +175,28 @@
     </ul>
 
     <h3>Crafts</h3>
-    <ul>
-        <li><a href="http://masr.in/transfer-liquid/">Transfter liquid language in liquid</a></li>
-        <li><a href="http://masr.in/skl-vs-jbb/">Baby Jie vs Shit boy</a></li>
-        <li><a href="http://masr.in:4321">ML web server</a></li>
-        <li><a href="http://masr.in/positive-negative">Positive or Negative</a></li>
-        <li><a href="http://masr.in/positive-negative">Teradata Checksum Tool</a></li>
+    <ul class="row-fluid">
+        <li class="span4"><a class="portal" target="_blank" href="http://masr.in/works/escape-liquid">
+            <img style="height:266px"
+                 src="index/img/escape_liquid.png"/></a>
+
+            <p class="intro" title="Escape Liquid">
+                The webpage tool can escape liquid code and show them in
+                liquid template environment like jekyll. I come up with the idea when I wrote jekyll blog and need to
+                display some liquid code. It is a very simple and static page.
+            </p></li>
+        <li class="span4">
+            <a class="portal" target="_blank" href="http://masr.in/works/baby-vs-shit">
+                <img style="height:266px"
+                     src="index/img/shit.jpg"/></a>
+
+            <p class="intro" title="Baby Jie vs Shit boy">It is a html5 game just written for fun. Baby is my girl
+                friend and SHE need to kiss me and avoid kissing the shit. Baby is in a tank and she can shoot the shit
+                and move round very quickly.</p>
+        </li>
+        <li class="span4"><a target="_blank" href="http://masr.in:4321">ML web server</a></li>
+        <li class="span4"><a target="_blank" href="http://masr.in/positive-negative">Positive or Negative</a></li>
+        <li class="span4"><a target="_blank" href="http://masr.in/positive-negative">Teradata Checksum Tool</a></li>
     </ul>
 
 </div>
@@ -169,6 +204,8 @@
 <script type="text/javascript">
 
     $(function () {
+
+
         var current = '';
         $("ul li  a img").mouseover(function () {
             if (current == $(this).attr('src'))
@@ -186,7 +223,9 @@
         ).mousemove(function (evt) {
                     var x = evt.pageX;
                     var y = evt.pageY;
-                    var txt = $(this).parent().siblings("p").html();
+                    var txt = $(this).parent().siblings('p').html();
+                    var title = $(this).parent().siblings('p').attr('title');
+                    txt = "<h4>" + title + "</h4>" + txt;
                     $("#popup").css({"left":x + 13 + "px", "top":y + 13 + "px"}).html(txt).show();
                     return false;
                 });
@@ -195,6 +234,8 @@
             var x = evt.pageX;
             var y = evt.pageY;
             var txt = $(this).siblings("p").html();
+            var title = $(this).siblings('p').attr('title');
+            txt = "<h4>" + title + "</h4>" + txt;
             $("#popup").css({"left":x + 13 + "px", "top":y + 13 + "px"}).html(txt).show();
             return false;
         }).mouseleave(function (evt) {
@@ -204,6 +245,7 @@
                 }).siblings("a.portal").find("img").each(function () {
                     shake($(this));
                 });
+
 
         function shake($dom) {
             $dom.animate({
